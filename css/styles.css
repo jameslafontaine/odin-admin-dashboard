@@ -1,8 +1,280 @@
+@font-face {
+    font-family: 'Aileron';
+    src: url('fonts/Aileron-Regular.woff2') format('woff2'),
+        url('fonts/Aileron-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ==========================================================================
+   Variables / Design tokens
+   ========================================================================== */
+/* #region */
+:root {
+    /* ------------------------------
+       Colors
+       ------------------------------ */
+    /* || Primary brand */
+    --color-primary-blue: #1992d4;
+    --color-primary-dark: #0066cc;
+
+    /* || Backgrounds */
+    --color-background-main: #e2e8f0;
+    --color-background-card: #ffffff;
+
+    /* || Accent / highlights */
+    --color-accent-yellow: #f0b429;
+    --color-accent-blue: #1992d4;
+    --color-accent-dark: #0066cc;
+
+    /* || Text */
+    --color-text-dark: #000000;
+    --color-text-medium: #636363;
+    --color-text-light: #FFFFFF;
+
+    /* || Notifications / status (optional) */
+    --color-notification: #f0b429;
+    --color-success: #10b981;
+
+    /* ------------------------------
+       Typography
+       ------------------------------ */
+    --font-family-base: 'Helvetica', sans-serif;
+    --font-family-heading: 'Helvetica', sans-serif;
+
+    --font-size-xs: 1rem;
+    --font-size-sm: 1.15rem;
+    --font-size-md: 1.3rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 1.75rem;
+    --font-size-2xl: 2rem;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --line-height-sm: 1.4;
+    --line-height-md: 1.6;
+    --line-height-lg: 1.8;
+
+    /* ------------------------------
+       Spacing / Layout
+       ------------------------------ */
+    --spacing-xxs: 4px;
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 20px;
+    --border-radius-xxl: 32px;
+    --border-radius-circle: 100%;
+
+    --z-index-dropdown: 1000;
+    --z-index-modal: 1100;
+    --z-index-tooltip: 1200;
+
+    /* ------------------------------
+       Shadows
+       ------------------------------ */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* #endregion */
+
+/* ==========================================================================
+   Base styles (reset, typography)
+   ========================================================================== */
+/* #region */
+
+/* ------------------------------
+   Reset
+   ------------------------------ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 
+    /* Debug */
     outline: 2px solid red;
 }
+
+/* ------------------------------
+   Typography
+   ------------------------------ */
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-md);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-family-heading);
+    line-height: var(--line-height-heading);
+    margin-bottom: 0.5em;
+}
+
+/* #endregion */
+
+/* ==========================================================================
+   Layout (grids, flex containers, page sections)
+   ========================================================================== */
+/* #region */
+
+/* ------------------------------
+   Full page
+   ------------------------------ */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+}
+
+/* ------------------------------
+   Header
+   ------------------------------ */
+
+.header {
+    grid-column: 2;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    background-color: var(--color-background-card);
+}
+
+.header__greeting {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+/* ------------------------------
+   Sidebar
+   ------------------------------ */
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+    display: grid;
+
+
+    background-color: var(--color-primary-blue);
+    color: var(--color-text-light);
+}
+
+/* ------------------------------
+   Content
+   ------------------------------ */
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    background-color: var(--color-background-main);
+}
+
+.content__projects {
+    grid-row: 1 / 3;
+}
+
+.content__projects-grid-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content__projects-card {
+    display: grid;
+}
+
+.content__projects-card-buttons {
+    justify-self: end;
+    margin-right: var(--spacing-xl)
+}
+
+.content__announcements-grid-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.content__trending-grid-container {
+    display: grid;
+
+    height: 75%;
+    align-items: center;
+}
+
+.content__trending-row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content__trending-profile-picture {
+    grid-row: 1 / 3;
+}
+
+/* #endregion */
+
+/* ==========================================================================
+   Components (cards, buttons, inputs)
+   ========================================================================== */
+/* #region */
+/* ------------------------------
+   Header
+   ------------------------------ */
+
+.header__buttons>button {
+    border: none;
+    padding: var(--spacing-xs);
+    width: 20%;
+
+    border-radius: var(--border-radius-xxl);
+    background-color: var(--color-primary-blue);
+    color: var(--color-text-light);
+
+}
+
+
+
+/* ------------------------------
+   Sidebar
+   ------------------------------ */
+
+/* ------------------------------
+   Content
+   ------------------------------ */
+.content__projects-card {
+    background-color: var(--color-background-card);
+}
+
+.content__announcements-grid-container {
+    background-color: var(--color-background-card);
+}
+
+.content__trending-grid-container {
+    background-color: var(--color-background-card);
+}
+
+/* #endregion */
+
+/* ==========================================================================
+   Utilities (margin helpers, text alignment)
+   ========================================================================== */
+/* #region */
+
+
+/* #endregion */
