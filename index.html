@@ -14,19 +14,25 @@
 
     <div class="header">
         <div class="header__search">
-            <img class="header__search-icon" src="" alt="Magnifying glass">
+            <img class="header__search-icon" src="img/header/magnify.svg" alt="magnifying glass" width="32px"
+                height="32px">
             <input type="search">
         </div>
         <div class="header__account">
-            <button class="header__account-notifications">Notifications</button>
+            <button class="header__account-notifications-btn">
+                <img class="bell-icon" src="img/header/bell-ring-outline.svg" alt="an outline of a ringing bell"
+                    width="32px" height="32px">
+            </button>
             <button class="header__account-info">
-                <img class="header__account-icon" src="" alt="User's profile picture">
+                <img class="header__account-avatar" src="img/profile-pictures/pfp-1.png" alt="user's profile picture"
+                    width="56px" height="48px">
                 <span>Morgan Oakley</span>
             </button>
 
         </div>
         <div class="header__greeting">
-            <img class="header__greeting-icon" src="" alt="User's profile picture">
+            <img class="header__greeting-avatar" src="img/profile-pictures/pfp-1.png" alt="user's profile picture"
+                width="88px" height="74px">
             <p class="header__greeting-text">
                 Hi there, <br>
                 <span class="header__greeting-user">Morgan Oakley (@morgan)</span>
@@ -41,36 +47,42 @@
 
 
     <div class="sidebar">
-        <img class="sidebar__logo" src="" alt="Dashboard logo">
+        <div class="sidebar__banner">
+            <img class="sidebar__logo" src="img/sidebar/odin-lined.png" alt="the dashboard logo" width="96px"
+                height="128px">
+            <h1>Dashboard</h1>
+        </div>
+
         <div class="sidebar__nav">
-            <div class="sidebar__nav-row">
-                <img src="" alt="Home">Home
-            </div>
-            <div class="sidebar__nav-row">
-                <img src="" alt="Profile">Profile
-            </div>
-            <div class="sidebar__nav-row">
-                <img src="" alt="Chat box">Messages
-            </div>
-            <div class="sidebar__nav-row">
-                <img src="" alt="Clock">History
-            </div>
-            <div class="sidebar__nav-row">
-                <img src="" alt="Files">Tasks
-            </div>
-            <div class="sidebar__nav-row">
-                <img src="" alt="People">Communities
-            </div>
+            <button class="sidebar__nav-row">
+                <img src="img/sidebar/home.svg" alt="home" width="32px" height="32px">Home
+            </button>
+            <button class="sidebar__nav-row">
+                <img src="img/sidebar/card-account-details-outline.svg " alt="profile" width="32px"
+                    height="32px">Profile
+            </button>
+            <button class="sidebar__nav-row">
+                <img src="img/sidebar/message.svg" alt="chat box" width="32px" height="32px">Messages
+            </button>
+            <button class="sidebar__nav-row">
+                <img src="img/sidebar/clock-time-three.svg" alt="clock" width="32px" height="32px">History
+            </button>
+            <button class="sidebar__nav-row">
+                <img src="img/sidebar/file-multiple.svg" alt="files" width="32px" height="32px">Tasks
+            </button>
+            <button class="sidebar__nav-row">
+                <img src="img/sidebar/account-group.svg" alt="people" width="32px" height="32px">Communities
+            </button>
             <div class="sidebar__nav-row">Blank Space Here</div>
-            <div class="sidebar__nav-row">
-                <img src="" alt="Gear">Settings
-            </div>
-            <div class="sidebar__nav-row">
-                <img src="" alt="Question mark">Support
-            </div>
-            <div class="sidebar__nav-row">
-                <img src="" alt="Shield">Privacy
-            </div>
+            <button class="sidebar__nav-row">
+                <img src="img/sidebar/cog.svg" alt="gear" width="32px" height="32px">Settings
+            </button>
+            <button class="sidebar__nav-row">
+                <img src="img/sidebar/help-box.svg" alt="question mark" width="32px" height="32px">Support
+            </button>
+            <button class="sidebar__nav-row">
+                <img src="img/sidebar/shield-check.svg" alt="shield" width="32px" height="32px">Privacy
+            </button>
         </div>
     </div>
 
@@ -84,9 +96,17 @@
                     <p>Maecenas porta est tellus, id maximus ante varius sed. Curabitur scelerisque aliquam mi quis
                         semper. Nam ac venenatis ex. Aenean ex velit, ultrices ut auctor ut, volutpat non nisl.</p>
                     <div class="content__projects-card-buttons">
-                        <button class="content__projects-star-btn">Star</button>
-                        <button class="content__projects-watch-btn">Watch</button>
-                        <button class="content__projects-share-btn">Share</button>
+                        <button class="content__projects-star-btn">
+                            <img class="star-icon" src="img/project-card/star-plus-outline.svg"
+                                alt="star outline with a plus" width="25px">
+                        </button>
+                        <button class="content__projects-watch-btn">
+                            <img class="eye-icon" src="img/project-card/eye-plus-outline.svg"
+                                alt="eye outline with a plus" width="25px">
+                        </button>
+                        <button class="content__projects-fork-btn">
+                            <img class="fork-icon" src="img/project-card/source-fork.svg" alt="fork icon" width="25px">
+                        </button>
                     </div>
                 </div>
                 <div class="content__projects-card">
@@ -94,9 +114,17 @@
                     <p>Phasellus vel tortor in diam molestie pretium. Integer vehicula ultricies felis quis vehicula.
                         Phasellus eget lectus bibendum, rutrum dui sit amet, eleifend justo.</p>
                     <div class="content__projects-card-buttons">
-                        <button class="content__projects-star-btn">Star</button>
-                        <button class="content__projects-watch-btn">Watch</button>
-                        <button class="content__projects-share-btn">Share</button>
+                        <button class="content__projects-star-btn">
+                            <img class="star-icon" src="img/project-card/star-plus-outline.svg"
+                                alt="star outline with a plus" width="25px">
+                        </button>
+                        <button class="content__projects-watch-btn">
+                            <img class="eye-icon" src="img/project-card/eye-plus-outline.svg"
+                                alt="eye outline with a plus" width="25px">
+                        </button>
+                        <button class="content__projects-fork-btn">
+                            <img class="fork-icon" src="img/project-card/source-fork.svg" alt="fork icon" width="25px">
+                        </button>
                     </div>
                 </div>
                 <div class="content__projects-card">
@@ -104,9 +132,17 @@
                     <p>Sed lobortis consequat turpis et ornare. Nullam condimentum, mi id lobortis tempus, dolor elit
                         imperdiet dui, dapibus pellentesque dui dolor nec tellus.</p>
                     <div class="content__projects-card-buttons">
-                        <button class="content__projects-star-btn">Star</button>
-                        <button class="content__projects-watch-btn">Watch</button>
-                        <button class="content__projects-share-btn">Share</button>
+                        <button class="content__projects-star-btn">
+                            <img class="star-icon" src="img/project-card/star-plus-outline.svg"
+                                alt="star outline with a plus" width="25px">
+                        </button>
+                        <button class="content__projects-watch-btn">
+                            <img class="eye-icon" src="img/project-card/eye-plus-outline.svg"
+                                alt="eye outline with a plus" width="25px">
+                        </button>
+                        <button class="content__projects-fork-btn">
+                            <img class="fork-icon" src="img/project-card/source-fork.svg" alt="fork icon" width="25px">
+                        </button>
                     </div>
                 </div>
                 <div class="content__projects-card">
@@ -114,9 +150,17 @@
                     <p>Morbi elementum iaculis lacus, non tincidunt sapien hendrerit nec. Cras at velit ac libero luctus
                         facilisis. Nullam vel urna quis erat tempor congue quis ac nulla.</p>
                     <div class="content__projects-card-buttons">
-                        <button class="content__projects-star-btn">Star</button>
-                        <button class="content__projects-watch-btn">Watch</button>
-                        <button class="content__projects-share-btn">Share</button>
+                        <button class="content__projects-star-btn">
+                            <img class="star-icon" src="img/project-card/star-plus-outline.svg"
+                                alt="star outline with a plus" width="25px">
+                        </button>
+                        <button class="content__projects-watch-btn">
+                            <img class="eye-icon" src="img/project-card/eye-plus-outline.svg"
+                                alt="eye outline with a plus" width="25px">
+                        </button>
+                        <button class="content__projects-fork-btn">
+                            <img class="fork-icon" src="img/project-card/source-fork.svg" alt="fork icon" width="25px">
+                        </button>
                     </div>
                 </div>
                 <div class="content__projects-card">
@@ -124,9 +168,17 @@
                     <p>Quisque molestie ligula sed lectus efficitur, ut facilisis ex lobortis. Proin odio leo, vehicula
                         id diam sed, feugiat ullamcorper lectus. Morbi nec mauris neque.</p>
                     <div class="content__projects-card-buttons">
-                        <button class="content__projects-star-btn">Star</button>
-                        <button class="content__projects-watch-btn">Watch</button>
-                        <button class="content__projects-share-btn">Share</button>
+                        <button class="content__projects-star-btn">
+                            <img class="star-icon" src="img/project-card/star-plus-outline.svg"
+                                alt="star outline with a plus" width="25px">
+                        </button>
+                        <button class="content__projects-watch-btn">
+                            <img class="eye-icon" src="img/project-card/eye-plus-outline.svg"
+                                alt="eye outline with a plus" width="25px">
+                        </button>
+                        <button class="content__projects-fork-btn">
+                            <img class="fork-icon" src="img/project-card/source-fork.svg" alt="fork icon" width="25px">
+                        </button>
                     </div>
                 </div>
                 <div class="content__projects-card">
@@ -134,9 +186,17 @@
                     <p>Vivamus nec pretium mi, quis porta massa. Integer eu viverra velit. Nunc blandit nibh eget tortor
                         ullamcorper, non blandit nunc volutpat. Donec sagittis porttitor faucibus.</p>
                     <div class="content__projects-card-buttons">
-                        <button class="content__projects-star-btn">Star</button>
-                        <button class="content__projects-watch-btn">Watch</button>
-                        <button class="content__projects-share-btn">Share</button>
+                        <button class="content__projects-star-btn">
+                            <img class="star-icon" src="img/project-card/star-plus-outline.svg"
+                                alt="star outline with a plus" width="25px">
+                        </button>
+                        <button class="content__projects-watch-btn">
+                            <img class="eye-icon" src="img/project-card/eye-plus-outline.svg"
+                                alt="eye outline with a plus" width="25px">
+                        </button>
+                        <button class="content__projects-fork-btn">
+                            <img class="fork-icon" src="img/project-card/source-fork.svg" alt="fork icon" width="25px">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -165,22 +225,26 @@
             <h3>Trending</h3>
             <div class="content__trending-grid-container">
                 <div class="content__trending-row">
-                    <img class="content__trending-profile-picture" src="" alt="Profile picture #1">
+                    <img class="content__trending-avatar" src="img/profile-pictures/pfp-2.jpg" alt="profile picture #1"
+                        width="56px" height="48px">
                     <p class="content__trending-username">@tegan</p>
                     <p class="content__trending-project-name">World Peace Builder</p>
                 </div>
                 <div class="content__trending-row">
-                    <img class="content__trending-profile-picture" alt="Profile picture #2">
+                    <img class="content__trending-avatar" src="img/profile-pictures/pfp-1.png" alt="profile picture #2"
+                        width="56px" height="48px">
                     <p class="content__trending-username">@morgan</p>
                     <p class="content__trending-project-name">Super Cool Project</p>
                 </div>
                 <div class="content__trending-row">
-                    <img class="content__trending-profile-picture" src="" alt="Profile picture #3">
+                    <img class="content__trending-avatar" src="img/profile-pictures/pfp-3.jpg" alt="profile picture #3"
+                        width="56px" height="48px">
                     <p class="content__trending-username">@kendall</p>
                     <p class="content__trending-project-name">Life Changing App</p>
                 </div>
                 <div class="content__trending-row">
-                    <img class="content__trending-profile-picture" src="" alt="Profile picture #4">
+                    <img class="content__trending-avatar" src="img/profile-pictures/pfp-4.png" alt="profile picture #4"
+                        width="56px" height="48px">
                     <p class="content__trending-username">@alex</p>
                     <p class="content__trending-project-name">No Traffic Maker</p>
                 </div>
