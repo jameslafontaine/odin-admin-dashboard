@@ -225,7 +225,7 @@ body {
    Note that padding takes care of a large portion of the spacing here */
 .header__account,
 .header__account-info {
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
 }
 
 .header__account-info>span {
@@ -417,7 +417,7 @@ body {
 }
 
 .header__account-info {
-    padding: var(--spacing-xxs) var(--spacing-xl);
+    padding: var(--spacing-xxs) var(--spacing-lg) var(--spacing-xxs) var(--spacing-xs);
     border-radius: var(--border-radius-3xl);
 
     display: grid;
