@@ -221,9 +221,9 @@ body {
     margin-bottom: var(--spacing-xxl);
 
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 20% 80%;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
 
 
 }
@@ -238,8 +238,8 @@ body {
     width: 100%;
 
     display: grid;
-    gap: var(--spacing-sm);
-    grid-template-columns: 1fr 4fr;
+    gap: var(--spacing-md);
+    grid-template-columns: 20% 80%;
     align-items: center;
 
     font-size: var(--font-size-md);
