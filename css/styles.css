@@ -99,12 +99,14 @@
     --border-radius-lg: 12px;
     --border-radius-xl: 20px;
     --border-radius-xxl: 32px;
-    --border-radius-circle: 50%;
-    --border-radius-oval: 100%;
+    --border-radius-circle: 100%;
 
     --z-index-dropdown: 1000;
     --z-index-modal: 1100;
     --z-index-tooltip: 1200;
+
+    --avatar-size-sm: 60px;
+    --avatar-size-lg: 100px;
 
     /* ------------------------------
        Shadows
@@ -129,8 +131,11 @@
     padding: 0;
     box-sizing: border-box;
 
+    background: none;
+    border: none;
+
     /* Debug */
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 /* ------------------------------
@@ -304,12 +309,26 @@ body {
    Utilities (margin helpers, text alignment)
    ========================================================================== */
 /* #region */
+
 .u-avatar {
-    width: 80px;
-    height: 80px;
     border-radius: var(--border-radius-circle);
-    object-fit: cover;
-    border: 3px solid white;
+    object-fit: contain;
+    padding: var(--spacing-xxs);
+    background-color: #fcd422;
+}
+
+
+
+.u-bg-blue {
+    background-color: rgb(153, 192, 250);
+}
+
+.u-bg-wheat {
+    background-color: wheat;
+}
+
+.u-bg-green {
+    background-color: rgb(179, 250, 120);
 }
 
 /* #endregion */
