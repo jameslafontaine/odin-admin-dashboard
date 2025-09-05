@@ -552,7 +552,7 @@ body {
     display: grid;
     align-items: center;
 
-    height: 90%;
+    height: 89.75%;
     padding: var(--spacing-md) var(--spacing-xl) var(--spacing-md) var(--spacing-xl);
 }
 
